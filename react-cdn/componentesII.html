@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes en React </title>
+
+    <!-- Scripts de Ract-->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+        <!--Load Babel-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+<body>
+    
+    <h3>Imtroducción al uso de componentes  funcionales en React</h3>
+
+    <div id='root'></div>
+
+    <script type="text/babel">
+    //Creando un componente llamado Saludo, como función
+        const Saludo = () => {
+            return (
+                <div>
+                    <h1> Bienvenidos alumnos al curso de React </h1>
+                    <h2>Temas</h2>
+                    <ol>
+                        <li>Introducción</li>
+                        <li>JSX</li>
+                        <li>React y reactDOM</li>
+                        <li>Componentes</li>
+                        <li>Estados</li>
+                    </ol>
+                </div>
+            );
+        }    
+
+
+
+        ReactDOM.render(<Saludo />, document.getElementById('root'));
+   
+    </script>
+
+
+
+</body>
+</html>
